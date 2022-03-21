@@ -13,22 +13,62 @@
 
 .ul_navbar{
 	list-style: none;
-	padding-left: 0;
-	display: inline-block;
+	/*padding-right: 0;
+	display: inline-block;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-content: center;
+	align-items: center;
 }
 
-.li_navbar{
+.ul_navbar_flag{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	padding-inline-start: 0px;
+	padding-inline-end: 40px;
+}
+
+.li_navbar_on{
 	/*border: 1px solid red;*/
-	background-color: #bbddcc;
-	text-align: center;
+	background-color: #ccddff;
+	padding: 6px 10px;
+	margin: auto 20px;
+	/*text-align: center;
 	padding: 6px 10px;
 	display: inline;
 	margin: auto 20px;
 	transition: border-radius 2s;
-	border-radius: 0px;
+	border-radius: 0px;*/
 }
 
-.li_navbar:hover{
+.li_navbar_on:hover{
+	text-decoration:underline;
+	/*color: #fc6d6c;*/
+	cursor:pointer;
+	font-weight:bold;
+	background-color: #efefff;
+	border-radius: 20px;
+}
+
+.li_navbar_off{
+	/*border: 1px solid red;*/
+	background-color: #ffffff;
+	padding: 6px 10px;
+	margin: auto 20px;
+	/*text-align: center;
+	padding: 6px 10px;
+	display: inline;
+	margin: auto 20px;
+	transition: border-radius 2s;
+	border-radius: 0px;*/
+}
+
+.li_navbar_off:hover{
 	text-decoration:underline;
 	/*color: #fc6d6c;*/
 	cursor:pointer;
@@ -40,12 +80,14 @@
 .li_navbar_flag_on{
 	/*border: 1px solid red;*/
 	background-color: #ccddff;
-	text-align: center;
+	padding: 6px 10px;
+	margin: auto 20px;
+	/*text-align: center;
 	padding: 6px 10px;
 	display: inline;
 	margin: auto 20px;
 	transition: border-radius 2s;
-	border-radius: 0px;
+	border-radius: 0px;*/
 }
 
 .li_navbar_flag_on:hover{
@@ -60,12 +102,14 @@
 .li_navbar_flag_off{
 	/*border: 1px solid red;*/
 	background-color: #ffffff;
-	text-align: center;
+	padding: 6px 10px;
+	margin: auto 20px;
+	/*text-align: center;
 	padding: 6px 10px;
 	display: inline;
 	margin: auto 20px;
 	transition: border-radius 2s;
-	border-radius: 0px;
+	border-radius: 0px;*/
 }
 
 .li_navbar_flag_off:hover{
@@ -102,5 +146,25 @@
 	justify-content: space-between;
 	align-content: center;
 	align-items: center;
-}
+	}
+	
+	.ul_navbar{
+	list-style: none;
+	/*padding-right: 0;
+	display: inline-block;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-content: center;
+	align-items: center;
+	}
+
+	.ul_navbar_flag{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	}
 }
