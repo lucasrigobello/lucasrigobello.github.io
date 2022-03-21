@@ -142,7 +142,7 @@
 	/*border: 1px solid red;*/
 	background-color: #ffffff;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-between;
 	align-content: center;
 	align-items: center;
