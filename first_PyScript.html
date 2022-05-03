@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PyScript Hello World</title>
+    	
+	<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+	<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+	<py-env>
+- numpy
+- matplotlib
+	</py-env>
+  </head>
+
+  <body>
+    <h1 style="text-align: center; background-color:lightblue">
+		Hello world!</h1>
+	<br>
+    <h2 style="text-align: center; background-color:lightgray">
+		This is my first Webpage developed with PyScript:</h2>
+	
+	<div id="python_result" style="background-color:lightgreen; 
+	display:flex; flex-direction:column; align-items:center"> </div>
+	
+	<py-script output = 'python_result'>
+import numpy as np
+import matplotlib.pyplot as plt
+from datetime import datetime
+
+now = datetime.now()
+developer = 'Lucas Rigobello'
+
+print('Desenvolvido por {}'.format(developer))
+print('Date and Time: {}'.format(now))
+
+numeros = np.random.rand(3,5)
+seq = np.array(range(5))
+
+plt.figure(figsize=(12,8))
+fig, ax = plt.subplots()
+ax.boxplot([numeros[0], numeros[1]*2, numeros[2]*1.2, seq])
+ax.set_ylabel('some numbers')
+fig
+
+    </py-script>
+  </body>
+</html>
